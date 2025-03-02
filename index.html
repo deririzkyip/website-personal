@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="assets/img/4.3.png" type="image/png">
+
+        <title>deririzz</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header" style="background-color: #f6f6f6;">
+            <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">deririzz</a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Service</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+        <section class="home" id="home" style="background: url('assets/img/copyright/7.png') no-repeat center center/cover; height: 100vh; display: flex; align-items: center; justify-content: center;">
+            <div class="home__content" style="text-align: center; padding: 20px; border-radius: 10px;">
+                <h1 class="home__title" id="typing-text" style="color: #fff; font-size: 2.5rem; margin-bottom: 10px;"></h1>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const text = "WELCOME TO MY WEBSITE";
+                    let index = 0;
+                    const speed = 100; // Adjust typing speed here
+
+                    function typeWriter() {
+                        if (index < text.length) {
+                            document.getElementById("typing-text").innerHTML += text.charAt(index);
+                            index++;
+                            setTimeout(typeWriter, speed);
+                        }
+                    }
+
+                    typeWriter();
+                });
+            </script>
+        </section>
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about" style="background-color: #f6f6f6;">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/copyright/33.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Deri Rizky</h2>
+                        <p class="about__text">Halo, Nama saya Deri Rizky, biasa di panggil deri. Saya berdomisil di pandeglang-banten, dan sekarang sedang menempuh
+                            pendidikan tinggi di salah satu universitas yang berada di daerah serang-banten. saya memiliki hoby yaitu berkendara, dan memiliki harapan, suatu saat nanti
+                            saya bisa keliling dunia, menikmati indahnya alam yang telah di ciptakan oleh tuhan sambil play musik....</p>        
+                           
+                            <audio controls>
+                                <source src="assets/music/sal.mp3" type="audio/mpeg">
+                               
+                            </audio>   
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Skills</h2>
+                        <p class="skills__text">di bawah ini adalah beberapa presentase keahlian saya di bidang tersebut.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Design</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work" style="background-color: #f6f6f6;">
+                <h2 class="section-title">Service</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+           <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form id="whatsapp-form" class="contact__form">
+                    <input type="text" id="name" placeholder="Nama" class="contact__input" required>
+                    <textarea id="message" cols="0" rows="10" placeholder="Pesan" class="contact__input" required></textarea>
+                    <button type="button" onclick="sendWhatsAppMessage()" class="contact__button button">Kirim</button>
+                </form>
+            </div>
+
+            <script>
+                function sendWhatsAppMessage() {
+                    var name = document.getElementById('name').value;
+                    var message = document.getElementById('message').value;
+                    var phoneNumber = '+6285133355446'; // Replace with your WhatsApp number
+
+                    if (name.trim() === "" || message.trim() === "") {
+                        alert("Harap isi nama dan pesan terlebih dahulu.");
+                        return;
+                    }
+
+                    var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' 
+                        + 'Nama : ' + name + '%0A'
+                        + 'Pesan : ' + message;
+
+                    window.open(whatsappUrl, '_blank');
+                }
+            </script>
+        </section>
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <div class="footer__stats">
+                <p>- Statistika Pengunjung -</p>
+                <p style="font-size: 12px; font-weight: 300;">Pengunjung Hari ini: <span id="visitors-today">0</span> orang</p>
+                <p style="font-size: 12px; font-weight: 300;">Pengunjung Bulan ini: <span id="visitors-month">0</span> orang</p>
+                <p style="font-size: 12px; font-weight: 300;">Pengunjung Tahun ini: <span id="visitors-year">0</span> orang</p>
+                </div>
+                <br>
+            <div class="footer__social">
+            <a href="https://www.linkedin.com/in/deririzkyip?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.instagram.com/deririzz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.behance.net/gallery/209657367/portofolio" class="footer__icon"><i class='bx bxl-behance' ></i></a>
+            <a href="https://github.com/deririzkyip" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.youtube.com/channel/UClqOnbWRmreghXbobrkCAnQ" class="footer__icon"><i class='bx bxl-youtube' ></i></a>
+            <a href="https://discord.com/invite/cunwPE9s" class="footer__icon"><i class='bx bxl-discord' ></i></a>
+            </div>
+            
+            <p class="footer__copy"><a href="https://linktr.ee/deririzkyip" style="color: rgb(255, 255, 255);" onmouseover="this.style.color='blue'" onmouseout="this.style.color='white'">&#169; copyright 2025 Deri Rizky </a></p>
+        
+    
+        </footer>
+
+        <script>
+            // Function to update visitor statistics
+            function updateVisitorStats() {
+            // Fetch visitor stats from localStorage or initialize if not present
+            let visitorsToday = localStorage.getItem('visitorsToday') || 0;
+            let visitorsMonth = localStorage.getItem('visitorsMonth') || 0;
+            let visitorsYear = localStorage.getItem('visitorsYear') || 0;
+
+            // Increment visitor counts
+            visitorsToday++;
+            visitorsMonth++;
+            visitorsYear++;
+
+            // Update localStorage with new values
+            localStorage.setItem('visitorsToday', visitorsToday);
+            localStorage.setItem('visitorsMonth', visitorsMonth);
+            localStorage.setItem('visitorsYear', visitorsYear);
+
+            // Update HTML elements with new values
+            document.getElementById('visitors-today').innerText = visitorsToday;
+            document.getElementById('visitors-month').innerText = visitorsMonth;
+            document.getElementById('visitors-year').innerText = visitorsYear;
+            }
+
+            // Call the function to update stats on page load
+            updateVisitorStats();
+
+            // Reset daily visitors at midnight
+            setInterval(() => {
+            let now = new Date();
+            if (now.getHours() === 0 && now.getMinutes() === 0) {
+                localStorage.setItem('visitorsToday', 0);
+            }
+            }, 60000); // Check every minute
+
+            // Reset monthly visitors on the first day of the month
+            setInterval(() => {
+            let now = new Date();
+            if (now.getDate() === 1 && now.getHours() === 0 && now.getMinutes() === 0) {
+                localStorage.setItem('visitorsMonth', 0);
+            }
+            }, 60000); // Check every minute
+
+            // Reset yearly visitors on the first day of the year
+            setInterval(() => {
+            let now = new Date();
+            if (now.getMonth() === 0 && now.getDate() === 1 && now.getHours() === 0 && now.getMinutes() === 0) {
+                localStorage.setItem('visitorsYear', 0);
+            }
+            }, 60000); // Check every minute
+        </script></div>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
