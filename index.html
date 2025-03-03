@@ -6,14 +6,14 @@
 
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!-- =====BOX ICONS===== -->
+       
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="icon" href="assets/img/4.3.png" type="image/png">
 
         <title>deririzz</title>
     </head>
     <body>
-        <!--===== HEADER =====-->
+      
         <header class="l-header" style="background-color: #f6f6f6;">
             <nav class="nav bd-grid">
             <div>
@@ -38,7 +38,7 @@
         </header>
 
         <main class="l-main">
-            <!--===== HOME =====-->
+           
         <section class="home" id="home" style="background: url('assets/img/copyright/7.png') no-repeat center center/cover; height: 100vh; display: flex; align-items: center; justify-content: center;">
             <div class="home__content" style="text-align: center; padding: 20px; border-radius: 10px;">
                 <h1 class="home__title" id="typing-text" style="color: #fff; font-size: 2.5rem; margin-bottom: 10px;"></h1>
@@ -48,7 +48,7 @@
                 document.addEventListener('DOMContentLoaded', function() {
                     const text = "WELCOME TO MY WEBSITE";
                     let index = 0;
-                    const speed = 100; // Adjust typing speed here
+                    const speed = 100; 
 
                     function typeWriter() {
                         if (index < text.length) {
@@ -62,7 +62,7 @@
                 });
             </script>
         </section>
-            <!--===== ABOUT =====-->
+          
             <section class="about section" id="about" style="background-color: #f6f6f6;">
                 <h2 class="section-title">About</h2>
 
@@ -73,9 +73,9 @@
                     
                     <div>
                         <h2 class="about__subtitle">Deri Rizky</h2>
-                        <p class="about__text">Halo, Nama saya Deri Rizky, biasa di panggil deri. Saya berdomisil di pandeglang-banten, dan sekarang sedang menempuh
-                            pendidikan tinggi di salah satu universitas yang berada di daerah serang-banten. saya memiliki hoby yaitu berkendara, dan memiliki harapan, suatu saat nanti
-                            saya bisa keliling dunia, menikmati indahnya alam yang telah di ciptakan oleh tuhan sambil play musik....</p>        
+                        <p class="about__text">Halo, Nama saya Deri Rizky, biasa di panggil deri. Saya berdomisili di pandeglang-banten, dan sekarang sedang menempuh
+                            pendidikan tinggi di salah satu universitas yang berada di daerah serang-banten. saya memiliki hobi yaitu berkendara, dan memiliki harapan, suatu saat nanti
+                            saya bisa keliling dunia, menikmati indahnya alam yang telah di ciptakan oleh tuhan sambil mendengarkan musik....</p>        
                            
                             <audio controls>
                                 <source src="assets/music/sal.mp3" type="audio/mpeg">
@@ -85,7 +85,7 @@
                 </div>
             </section>
 
-            <!--===== SKILLS =====-->
+           
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
@@ -137,7 +137,7 @@
                 </div>
             </section>
 
-            <!--===== WORK =====-->
+           
             <section class="work section" id="work" style="background-color: #f6f6f6;">
                 <h2 class="section-title">Service</h2>
 
@@ -163,8 +163,6 @@
                 </div>
             </section>
 
-            <!--===== CONTACT =====-->
-           <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
 
@@ -180,7 +178,7 @@
                 function sendWhatsAppMessage() {
                     var name = document.getElementById('name').value;
                     var message = document.getElementById('message').value;
-                    var phoneNumber = '+6285133355446'; // Replace with your WhatsApp number
+                    var phoneNumber = '+6285133355446'; 
 
                     if (name.trim() === "" || message.trim() === "") {
                         alert("Harap isi nama dan pesan terlebih dahulu.");
@@ -198,7 +196,6 @@
 
         </main>
 
-        <!--===== FOOTER =====-->
         <footer class="footer">
             <div class="footer__stats">
                 <p>- Statistika Pengunjung -</p>
@@ -222,41 +219,34 @@
         </footer>
 
         <script>
-            // Function to update visitor statistics
+ 
             function updateVisitorStats() {
             // Fetch visitor stats from localStorage or initialize if not present
             let visitorsToday = localStorage.getItem('visitorsToday') || 0;
             let visitorsMonth = localStorage.getItem('visitorsMonth') || 0;
             let visitorsYear = localStorage.getItem('visitorsYear') || 0;
 
-            // Increment visitor counts
+    
             visitorsToday++;
             visitorsMonth++;
             visitorsYear++;
-
-            // Update localStorage with new values
             localStorage.setItem('visitorsToday', visitorsToday);
             localStorage.setItem('visitorsMonth', visitorsMonth);
             localStorage.setItem('visitorsYear', visitorsYear);
 
-            // Update HTML elements with new values
             document.getElementById('visitors-today').innerText = visitorsToday;
             document.getElementById('visitors-month').innerText = visitorsMonth;
             document.getElementById('visitors-year').innerText = visitorsYear;
             }
 
-            // Call the function to update stats on page load
             updateVisitorStats();
 
-            // Reset daily visitors at midnight
             setInterval(() => {
             let now = new Date();
             if (now.getHours() === 0 && now.getMinutes() === 0) {
                 localStorage.setItem('visitorsToday', 0);
             }
-            }, 60000); // Check every minute
-
-            // Reset monthly visitors on the first day of the month
+            }, 60000); 
             setInterval(() => {
             let now = new Date();
             if (now.getDate() === 1 && now.getHours() === 0 && now.getMinutes() === 0) {
@@ -264,17 +254,15 @@
             }
             }, 60000); // Check every minute
 
-            // Reset yearly visitors on the first day of the year
             setInterval(() => {
             let now = new Date();
             if (now.getMonth() === 0 && now.getDate() === 1 && now.getHours() === 0 && now.getMinutes() === 0) {
                 localStorage.setItem('visitorsYear', 0);
             }
-            }, 60000); // Check every minute
+            }, 60000); 
         </script></div>
 
 
-        <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
